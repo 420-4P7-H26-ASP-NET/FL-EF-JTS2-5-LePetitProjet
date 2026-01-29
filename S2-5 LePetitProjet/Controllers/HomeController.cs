@@ -6,8 +6,9 @@ namespace S2_5_LePetitProjet.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(int? id)
         {
+            ViewBag.Id = id;
             return View();
         }
 
